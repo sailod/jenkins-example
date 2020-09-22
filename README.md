@@ -5,6 +5,9 @@
 - if the number is divisible by 5, you say Buzz
 - if neither, you say the number
 
+### Prerequisites
+- jenkins with maven 3.5 configured
+
 ### Prerequisites - for deployment stage only
 - install ansible
 - set java server in /etc/ansible/hosts under java-servers section
