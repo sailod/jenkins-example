@@ -9,6 +9,6 @@
 
     - name: deploy artifact library to staging env 
       copy:
-        src: target/jenkins-example-1.0-SNAPSHOT.jar
-        dest: /home/jenkins-example-1.0-SNAPSHOT.jar
+        src: target/classes/com
+        dest: /home/
 
