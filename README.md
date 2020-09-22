@@ -4,3 +4,8 @@
 - if the number is divisible by 3, you say Fizz
 - if the number is divisible by 5, you say Buzz
 - if neither, you say the number
+
+### Prerequisites - for deployment stage only
+- install ansible
+- set java server in /etc/ansible/hosts under java-servers section
+- set passwordless login to the java server for ansible deployment

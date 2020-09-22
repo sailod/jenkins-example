@@ -23,9 +23,7 @@ pipeline {
 
         stage ('Deployment Stage') {
             steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn deploy'
-                }
+                    sh 'ansible-playbook deployment_playbook.yaml  -u root'
             }
         }
     }

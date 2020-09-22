@@ -1,0 +1,14 @@
+- name: Network Getting Started First Playbook Extended
+  gather_facts: false
+  hosts: java-servers
+  tasks:
+    - name: install java runtime
+      apt:
+        name: openjdk-11-jdk
+        update_cache: yes
+
+    - name: deploy artifact library to staging env 
+      copy:
+        src: target/jenkins-example-1.0-SNAPSHOT.jar
+        dest: /home/jenkins-example-1.0-SNAPSHOT.jar
+
